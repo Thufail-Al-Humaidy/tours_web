@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Scheherazade+New:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(63, 63, 63);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+}
+/* HEADER */
+.myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header:before {
+    z-index: 5;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0, 5), rgb(0, 0, 0, 0));
+}
+
+nav {
+    width: 100%;
+    /* background: linear-gradient(rgba(36, 36, 36, 0.938), rgba(114, 114, 114, 0.938)); */
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    position: relative;
+    /* height: 400px; */
+}
+
+nav .logo {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    gap: 10px;
+}
+
+nav .logo h4 {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 20px;
+}
+
+nav .logo img {
+    width: 40px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links li a {
+    margin: 0 30px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 166, 0, 0);
+    transition: all 1s;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nav-links li a:hover {
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+
+.header-content {
+    color: white;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+.header-content h2 {
+    font-weight: 600;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.button {
+    padding: 5px 10px;
+    width: 300px;
+    background-color: whitesmoke;
+    font-weight: 500;
+    border-radius: 30px;
+    color: black;
+    transition: all .5s;
+}
+
+.button:hover {
+    color: white;
+    background-color: rgb(0, 121, 0);
+}
+
+.menu-btn{
+    display: none;
+}
+
+/* SECTION */
+.awal{
+    background:linear-gradient(#0f0c29,#302b63,#24243e);
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.title {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+.title h1{
+    color: orange;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.dalil{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 8px;
+
+}
+
+.dalil .Allah{
+    font-size: 12px;
+}
+
+.dalil .arab{
+    font-family: 'Scheherazade New', serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dalil .arti{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.container-gallery {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+
+.img-gallery {
+    display: flex;
+    width: 100%;
+    min-height: 250px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.videodalil {
+    min-width: 100%;
+    min-height: 100%;
+}
+/* SECTION DUA */
+.dua {
+    background: linear-gradient(#0F2027,#203A43,#2C5364);
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    background-color: gray;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.8);
+}
+.column h4{
+    text-align: center;
+}
+
+.column img {
+    width: 300px;
+    /* height: 400px; */
+    object-fit: cover;
+}
+
+.column p{
+    text-align: center;
+    width: 300px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* SECTION TIGA */
+.tiga {
+    background: linear-gradient(#373B44,#4286f4);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    gap: 30px;
+}
+.tiga .title p{
+    font-size: medium;
+    text-align: center;
+}
+
+.tiga .bungkus {
+    display: flex;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
+    border-radius: 20px;
+}
+.tiga .img_satu{
+    background-image: url(img/section_tiga\ \(1\).jpg);
+}
+
+.tiga .img_dua {
+    background-image: url(img/section_tiga\ \(2\).jpg);
+}
+.tiga .img_tiga {
+    background-image: url(img//section_tiga\ \(3\).jpg);
+}
+.tiga .img_empat {
+    background-image: url(img/section_tiga\ \(4\).jpg);
+}
+.tiga .img_lima {
+    background-image: url(img/section_tiga\ \(5\).jpg);
+}
+.tiga .img_enam {
+    background-image: url(img//section_tiga\ \(6\).jpg);
+}
+
+
+.tiga .bungkus:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0, 5), rgb(0, 0, 0, 0));
+    border-radius: 20px;
+}
+
+.tiga .img {
+    display: flex;
+    justify-content: flex-end;
+    height: 300px;
+    padding: 20px 25px;
+    position: relative;
+    flex-direction: column;
+    transition: all .5s;
+    /* background-color: red; */
+}
+.tiga .img a{
+    transition: all .5s;
+}
+
+.tiga .img:hover {
+    transform: translateY(-10px);
+    color: aqua;
+}
+.tiga .img a:hover{
+    color: greenyellow;
+}
+
+.tiga .img h5 {
+    font-size: 25px;
+    z-index: 5;
+}
+
+.tiga .img p {
+    font-size: 12px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .8);
+    gap: 8px;
+}
+
+footer .copy {
+    color: #eaeaea;
+    font-size: 16px;
+    text-align: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e3e3;
+    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.social-icons i {
+    color: #000000;
+}
+
+.social-icons a:hover {
+    background-color: #000000;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    transition: all ease 0.5s;
+}
+
+.social-icons a:hover i {
+    color: #FFFFFF;
+    transition: all ease 0.5s;
+}
+
+/* RESPONSIVE MOBILE */
+@media only screen and (max-width:768px) {
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+        background: black;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        margin: 0;
+        z-index: 6;
+        /* right: 0; */
+    }
+
+    
+    .nav-links li {
+        margin-top: 30px;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .menu-btn {
+        z-index: 7;
+        display: flex;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .menu-btn:hover{
+        color: aqua;
+    }
+    nav .logo {
+    font-size: 15px;
+    }
+    nav .logo img {
+        width: 35px;
+    }
+    .header-content h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .header-content h1 {
+        font-size: 25px;
+    }
+    
+    .button {
+        padding: 5px 10px;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    header::before{
+        height: 20vh;
+    }
+
+    .awal .title{
+        font-size: 20px;
+    }
+    .awal .title .dalil p{
+        font-size: 10px;
+        font-weight: 100;
+
+    }
+
+    /* SECTION DUA */
+    .column {
+        height: 350px;
+        width: 350px;
+    }
+    .column img{
+        width: 250px;
+    }
+    .column h4{
+        font-size: 15px;
+    }
+
+    .column p{
+        font-size: 10px;
+        width: 250px;
+    }
+
+    /* FOOTER */
+    footer{
+        height: 10vh;
+    }
+    .social-icons a{
+        width: 30px;
+        height: 30px;
+    }
+    
+    footer .copy{
+        font-size: 12px;
+    }
+    .tiga .title p {
+        font-size: 15px;
+
+    }
+}
